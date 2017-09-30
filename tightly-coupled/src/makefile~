@@ -1,9 +1,0 @@
-CC = cc
-
-spellchk1: spellchk
-	${CC} -o$@ spellchecker.o -std=gnu99 -g
-spellchk: spellchecker.c
-	${CC} -c spellchecker.c -std=gnu99 -g
-
-.PHONY: clean
-	rm *.o spellchk1 spellchk
